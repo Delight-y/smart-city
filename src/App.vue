@@ -1,26 +1,22 @@
+<!--
+ * @Author: lili11.yang
+ * @Date: 2023-06-30 10:10:45
+ * @Description: 
+ * @LastEditTime: 2023-06-30 14:35:45
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PanelMap />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import PanelMap from "./components/PanelMap.vue";
 </script>
 
-<style>
+<style lang="scss">
+@import "@/styles/base.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 </style>
